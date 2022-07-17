@@ -146,12 +146,13 @@ D. whole
 >The receiving window size of the stop wait protocol and the fallback N-frame protocol is 1, so only packets can be received in sequence. The receiving window size of the selected retransmission protocol is larger than 1, so a certain number of packets that do not arrive in order can be temporarily stored.
 ## 3.5 Peer-to-peer protocol PPP
 ![summary](Picture/3_5.png)
-The role of LCP frames in PPP is (A)  
+The role of LCP frames in PPP is 
 
 A. Negotiate the configuration options for the data link protocol during the "establish" status phase  
 B. Configure network layer protocols  
 C. Check the data link layer for errors and notify the error message  
-D. Security control to protect the data security of both communication parties  
+D. Security control to protect the data security of both communication parties    
+> A
 ## 3.6 Media Access Control MAC
 - ### 3.6.1 Basic Concepts of Media Access Control
 - ### 3.6.2 Media Access Control — Statically Dividing Channels
@@ -212,30 +213,30 @@ D. 1000bit
     ![summary](Picture/4_3-4.png)
 - ### 4.3.5 Application planning for IPv4 addresses 
     ![summary](Picture/4_3-5.png)
-In order to reduce address waste on a point-to-point link, the address mask should be specified as   
+    In order to reduce address waste on a point-to-point link, the address mask should be specified as   
 
-A. 255.255.255.252  
-B. 255.255.255.248  
-C. 255.255.255.240  
-D. 255.255.255.196
+    A. 255.255.255.252  
+    B. 255.255.255.248  
+    C. 255.255.255.240  
+    D. 255.255.255.196
 
-> C
+    > C
 
-In the following statement about FLSM and VLSM, the error is  
+    In the following statement about FLSM and VLSM, the error is  
 
-A. FLSM uses the same subnet mask to partition subnets  
-B. VLSM can use different subnet masks to partition subnets  
-C. Use the subnet divided by FLSM, and the number of IP addresses allocated to each subnet is the same  
-D. Using VLSM to divide subnets, only an even number of subnets can be divided  
+    A. FLSM uses the same subnet mask to partition subnets  
+    B. VLSM can use different subnet masks to partition subnets  
+    C. Use the subnet divided by FLSM, and the number of IP addresses allocated to each subnet is the same  
+    D. Using VLSM to divide subnets, only an even number of subnets can be divided  
 
-> D
+    > D
 ## 4.4 The process of sending and forwarding IP datagrams 
 ![summary](Picture/4_4.png)
 
 ## 4.5 Static route configuration and routing loop problems that it can generate  
 ![summary](Picture/4_5.png)
 
-If the network where the destination IP address of an IP packet resides has A routing loop, then 
+If the network where the destination IP address of an IP packet resides has a routing loop, then 
 
 A. IP packet will circle permanently in the network.   
 B. IP packet can finally reach the destination host.  
@@ -244,7 +245,7 @@ D. IP datagrams do not go around the network
 
 > C
 
-When configuring A default route for A router, the destination network address and subnet mask are 
+When configuring a default route for A router, the destination network address and subnet mask are 
 
 A. 0.0.0.0 0.0.0.0   
 B. 0.0.0.0 255.255.255.255   
@@ -265,23 +266,35 @@ D. 255.255.255.255 255.255.255.255
 ![summary](Picture/4_7.png)
 ## 4.8 Internet control message protocol ICMP 
 ![summary](Picture/4_8.png)  
- If A router receives an IP packet with the TTL value of 1,   
+If A router receives an IP packet with the TTL value of 1,   
  
- A. forwards the IP packet. 
- B. discards the IP packet only.  
- C. discards the IP packet and sends an ICMP error report packet  
- D. with the destination unreachable type to the source host that sends the IP packet Discards the IP packet and sends an ICMP error report packet of the expired type to the source host that sends the IP packet  
+A. forwards the IP packet.   
+B. discards the IP packet only.  
+C. discards the IP packet and sends an ICMP error report packet  
+D. Discards the IP packet and sends an ICMP error report packet of expired time to the source host that sends the IP packet.
+
+> D
 ## 4.9 Virtual Private Network VPN with Network Address Translation NAT 
 ![summary](Picture/4_9.png)
 ## 4.10 Software-Defined Networking SDN 
-## 4.11 Extended Learning Video: Internet: Packets, Routing, and Reliability 
+![summary](Picture/4_10.png)
 # Chapter 5 Transport Layer 
 ## 5.1 Transport layer overview 
+![summary](Picture/5_1.png)
 ## 5.2 The concept of transport layer port numbers, multiplexing, and separation 
+![summary](Picture/5_2.png)
 ## 5.3 Comparison of UDP and TCP 
-## 5.4 TCP traffic control 
+![summary](Picture/5_3.png)
+## 5.4 TCP traffic control
+![summary](Picture/5_4.png)
+
+![summary](Picture/5_4_question.png)
 ## 5.5 Congestion control of TCP 
+![summary](Picture/5_5.png)
+
+![summary](Picture/5_5_question.png)
 ## 5.6 TCP timeout retransmission time selection 
+![summary](Picture/5_6.png)
 ## 5.7 Implementation of tcp reliable transport 
 ## 5.8 Transport Connection Management for TCP 
 - ### 5.8.1 TCP connection establishment 
