@@ -1,28 +1,28 @@
 # Computer-Network
 [Crash Course](https://www.bilibili.com/video/BV1c4411d7jb?p=9)  
 [practice](https://mooc1.chaoxing.com/mycourse/studentstudy?chapterId=514468890&courseId=222640205&clazzid=50594404&cpi=242880082&enc=731c7d0116ea42bde24fb801ab046f4f&mooc2=1&openc=e1fdab8fd7617963e289fb338aa720d2)  
-
+[Illustrate HTTP](Ilustrate%20HTTP.pdf)
 ## commit format
 Subject = concise summary of what happened 
 
 Body = more detailed explanation:
 1. What is now different than before? 
-2. What's the reason for the change? 
+2. What's the reason for the change?  
 3. Is there anything to watch out for / anything particularly remarkable? 
 
 **Table of Contents**
-- [**chapter 1 Overview**](#chapter-1)
+- [**Chapter 1 Overview**](#chapter-1)
   1. [Three switching methods](#13-three-switching-methods-circuit-switching-packet-switching-and-message-switching)
   2. [Definition and Classification of Computer Networks ](#14-definition-and-classification-of-computer-networks)
   3. [Performance indicators of computer networks](#15-performance-indicators-of-computer-networks)
   4. [Computer Network Architecture](#16-computer-network-architecture)
-- [**chapter 2 The Physical Layer**](#chapter-2)
+- [**Chapter 2 The Physical Layer**](#chapter-2)
   1. [The basic concept of the physical layer](#21-the-basic-concept-of-the-physical-layer)
   2. [The transport media below the physical layer](#22-the-transport-media-below-the-physical-layer)
   3. [Transmission mode](#23-transmission-mode)
   4. [Encoding and modulation](#24-encoding-and-modulation)
   5. [The limit capacity of the channel](#25-the-limit-capacity-of-the-channel)
-- [**chapter 3 Data Link Layer**](#chapter-3)
+- [**Chapter 3 Data Link Layer**](#chapter-3)
   1. [Data link layer overview](#31-data-link-layer-overview)
   2. [Encapsulated into frames](#32-encapsulated-into-frames)
   3. [Error detection](#33-error-detection)
@@ -36,7 +36,7 @@ Body = more detailed explanation:
   11. [Virtual Local Area Network (VLAN) VLANs](#311-virtual-local-area-network-vlan-vlans)
 - [**Chapter 4 The Network Layer**](#chapter-4-the-network-layer)
   1. [Network layer overview](#41-network-layer-overview)
-  2. [The network layer provides two services ](#42-1the-network-layer-provides-two-services)
+  2. [The network layer provides two services](#42-1the-network-layer-provides-two-services)
   3. [IPv4 addresses and their applications](#43-ipv4-addresses-and-their-applications)
   4. [The process of sending and forwarding IP datagrams](#44-the-process-of-sending-and-forwarding-ip-datagrams)
   5. [Static route configuration and routing loop problems that it can generate](#45-2static-route-configuration-and-routing-loop-problems-that-it-can-generate)
@@ -45,6 +45,24 @@ Body = more detailed explanation:
   8. [Internet control message protocol ICMP](#48-internet-control-message-protocol-icmp)
   9. [Virtual Private Network VPN with Network Address Translation NAT](#49-virtual-private-network-vpn-with-network-address-translation-nat)
   10. [Software-Defined Networking SDN](#410-software-defined-networking-sdn)
+- [**Chapter 5 Transport Layer**](#chapter-5-transport-layer) 
+    1. [Transport layer overview](#51-transport-layer-overview)
+    2. [The concept of transport layer port numbers, multiplexing, and separation](#52-the-concept-of-transport-layer-port-numbers-multiplexing-and-separation)
+    3. [Comparison of UDP and TCP](#53-comparison-of-udp-and-tcp)
+    4. [TCP flow control](#54-tcp-flow-control)
+    5. [Congestion control of TCP](#55-congestion-control-of-tcp)
+    6. [TCP timeout retransmission time selection](#56-tcp-timeout-retransmission-time-selection)
+    7. [Implementation of tcp reliable transport](#57-implementation-of-tcp-reliable-transport)
+    8. [Transport Connection Management for TCP](#58-transport-connection-management-for-tcp)
+    9. [The format of the first part of the TCP message segment](#59-the-format-of-the-first-part-of-the-tcp-message-segment)
+- [**Chapter 6 Application Layer**](#chapter-6-application-layer)
+    1. [**Application tier overview**](#61-application-tier-overview)
+    2. [**Client—Server mode and Peer-to-Peer mode**](#62-clientserver-mode-and-peer-to-peer-mode)
+    3. [**Dynamic Host Configuration Protocol DHCP**](#63-dynamic-host-configuration-protocol-dhcp)
+    4. [**Domain Name System DNS**](#64-domain-name-system-dns)
+    5. [**File Transfer Protocol FTP**](#65-file-transfer-protocol-ftp)
+    6. [**email**](#66-email)
+    7. [**WWW. World Wide Web**](#67-www-world-wide-web)
 ----------
 # Chapter 1 Overview 
 ## 1.3 Three switching methods: circuit switching, packet switching and message switching 
@@ -285,7 +303,7 @@ D. Discards the IP packet and sends an ICMP error report packet of expired time 
 ![summary](Picture/5_2.png)
 ## 5.3 Comparison of UDP and TCP 
 ![summary](Picture/5_3.png)
-## 5.4 TCP traffic control
+## 5.4 TCP flow control
 ![summary](Picture/5_4.png)
 
 ![summary](Picture/5_4_question.png)
@@ -296,9 +314,51 @@ D. Discards the IP packet and sends an ICMP error report packet of expired time 
 ## 5.6 TCP timeout retransmission time selection 
 ![summary](Picture/5_6.png)
 ## 5.7 Implementation of tcp reliable transport 
+![summary](Picture/5_7.png)
+
+![summary](Picture/5_7_question.png)
 ## 5.8 Transport Connection Management for TCP 
 - ### 5.8.1 TCP connection establishment 
+    ![summary](Picture/5_8_1.png)
 - ### 5.8.2 TCP connection release 
+    ![summary](Picture/5_8_2.png)
 ## 5.9 The format of the first part of the TCP message segment
+![summary](Picture/5_9.png)
+# Chapter 6 Application Layer 
+## 6.1 Application tier overview 
+![summary](Picture/6_1.png)
 
+In the computer network architecture, the main function of the application layer is   
+A. to realize network-based communication between processes   
+B. to realize specific network applications through interaction between processes   
+C to realize group transmission over multiple networks   
+D. to transparently transmit bit stream  
+> B
+## 6.2 Client—Server mode and Peer-to-Peer mode 
+![summary](Picture/6_2.png)
+## 6.3 Dynamic Host Configuration Protocol DHCP 
+![summary](Picture/6_3.png)
+## 6.4 Domain Name System DNS 
+![Summary](Picture/6_4.png)
 
+![summary](Picture/6_4_question.png)
+If the local DNS has no cache, when the recursive query method is used to resolve a host domain name in another network, the number of domain name requests sent by the user host and the local DNS are ___.   
+A. 1，1   
+B. 1, more   
+C. more, 1   
+D. more, more 
+> Answer: A   
+> Resolution:   
+> The host sends a message to the local DNS.  
+> The local DNS sends a message to the root DNS
+
+## 6.5 File Transfer Protocol FTP 
+![summary](Picture/6_5.png)
+
+![summary](Picture/6_5_question.png)
+## 6.6 email 
+![summary](Picture/6_6.png)
+## 6.7 WWW. World Wide Web
+![summary](Picture/6_7.png)
+
+----------------------------
